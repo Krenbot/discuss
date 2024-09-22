@@ -2,7 +2,6 @@ import type { PostWithData } from '@/db/queries/posts';
 import Link from 'next/link';
 import paths from '@/paths';
 
-// Get list of posts into this component
 interface PostListProps {
   fetchData: () => Promise<PostWithData[]>;
 }

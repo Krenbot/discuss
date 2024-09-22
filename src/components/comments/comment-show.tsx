@@ -8,7 +8,6 @@ interface CommentShowProps {
   postId: string;
 }
 
-//Get a list of comments
 export default async function CommentShow({
   commentId,
   postId,
