@@ -1,5 +1,6 @@
 'use client';
 
+import { useFormState } from 'react-dom';
 import {
   Input,
   Button,
@@ -8,17 +9,18 @@ import {
   PopoverTrigger,
   PopoverContent,
 } from '@nextui-org/react';
-import { useFormState } from 'react-dom';
 import * as actions from '@/actions';
 import FormButton from '@/components/common/form-button';
 
 export default function TopicCreateForm() {
-  const [formState, action] = useFormState(actions.createTopic, { errors: {} });
+  const [formState, action] = useFormState(actions.createTopic, {
+    errors: {},
+  });
 
   return (
     <Popover placement="left">
       <PopoverTrigger>
-        <Button color="primary">Create A Topic</Button>
+        <Button color="primary">Create a Topic</Button>
       </PopoverTrigger>
       <PopoverContent>
         <form action={action}>
@@ -28,7 +30,7 @@ export default function TopicCreateForm() {
               name="name"
               label="Name"
               labelPlacement="outside"
-              placeholder="name"
+              placeholder="Name"
               isInvalid={!!formState.errors.name}
               errorMessage={formState.errors.name?.join(', ')}
             />
@@ -43,12 +45,12 @@ export default function TopicCreateForm() {
             />
 
             {formState.errors._form ? (
-              <div className="p-2 bg-red-200 border border-red-400 rounded">
-                {formState.errors._form.join(', ')}
+              <div className="rounded p-2 bg-red-200 border border-red-400">
+                {formState.errors._form?.join(', ')}
               </div>
             ) : null}
 
-            <FormButton>Create Topic</FormButton>
+            <FormButton>Save</FormButton>
           </div>
         </form>
       </PopoverContent>
