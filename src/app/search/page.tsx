@@ -10,6 +10,7 @@ interface SearchPageProps {
 
 export default async function SearchPage({ searchParams }: SearchPageProps) {
   const { term } = searchParams;
+
   if (!term) {
     redirect('/');
   }

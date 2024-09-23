@@ -7,7 +7,7 @@ import {
   NavbarItem,
 } from '@nextui-org/react';
 import HeaderAuth from '@/components/header-auth';
-import SearchInput from './search-input';
+import SearchInput from '@/components/search-input';
 
 export default function Header() {
   return (
