@@ -1,7 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Discuss
+https://discuss-indol-five.vercel.app/
 
-## Getting Started
+## Description
 
+Share your ideas, spark discussions, and connect with people intrested in the same topics as you! Sign in to post a topic or a comment, and read what others are saying about the subject.
+
+Discuss was a project I used to learn the ins and outs of the specific features Next has to offer. As a web developer, we should always be looking to use and adapt to new technologies and frameworks.
+
+Not only was this course more exposure to Typescript, which I am getting familiar with, but it also helped build foundational knowledge of server/client side rendering and how Next can optimize these situations.
+
+## Table of Contents
+  1) [Technologies](#technologies)
+  2) [Challenges](#challenges)
+  3) [Future Implementations](#future-implementation)
+  4) [User Story](#user-story)
+  5) [Installation](#installation)
+  6) [Credits](#credits)
+  7) [License](#license)
+
+## Technologies
+* [React](https://react.dev/) - Front-end library.
+* [Next.js](https://nextjs.org/docs) - Routing, rendering, optimizations, etc.
+* [Next auth](https://next-auth.js.org/getting-started/introduction) - Authentication.
+* [Zod](https://zod.dev/) - Data validation.
+* [Tailwind](https://tailwindcss.com/docs/installation) - Styling.
+* [Prisma](https://www.prisma.io/docs) - ORM Database management.
+* [Vercel](https://vercel.com/) - Hosting.
+
+## Challenges
+* Rendering Strategies - when to use SSR/CSR, PPR, skeletons, and more.
+* Tailwind - first project using Tailwind instead of CSS/SCSS. Challenging to learn inline styling syntax.
+
+## Future Implementation
+* Pages with entire threads rather than just topics.
+* Topic formatting - allow spaces.
+* Allow unregistered users to post topics.
+* Redesign UI to be less minimalistic.
+
+## User Story
+```md
+AS A internet information searcher
+I WANT to have a forum to talk about topics
+SO THAT I can learn more about web-based topics.
+```
+
+## Installation
 First, run the development server:
 
 ```bash
@@ -18,19 +61,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Host locally or ask for .env files.
 
-## Learn More
+## Credits
+* Project came from a tutorial by [Stephen Grider](https://zerotomastery.io/)'s [Next.js Complete Developer's Guide](https://gale.udemy.com/course/next-js-the-complete-developers-guide) course.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+MIT © Krenbot
